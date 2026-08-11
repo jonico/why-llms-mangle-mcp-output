@@ -6,7 +6,7 @@ Companion artifact to [*When the Agent Confidently Gets Your Dates Wrong*](READM
 |---|---|
 | **Model** | Claude Sonnet 5 (`claude-sonnet-5`) |
 | **Runtime** | Claude Agent SDK, in an agentic "Cowork" configuration with file tools + sandboxed shell + connected MCP servers |
-| **Tool involved** | A single-purpose MCP server exposing one tool (`getKudos`-style: takes a username, returns a JSON array of kudos/shoutout records) |
+| **Tool involved** | A single-purpose MCP server exposing one tool, `getSparkles`: takes a username, returns a JSON array of sparkle/peer-recognition records (`reason`, `sparkle-date`, `sparkle-giver`, `sparkle-user`) |
 | **Payload size** | 159 JSON records, ~15–20K tokens, ~4 short string/date fields per record |
 | **Tool calls made** | 3 sequential calls to the identical tool + arguments, across one conversation |
 | **Result across calls** | Byte-for-byte identical on calls 2 and 3 (verified by direct comparison) — the tool was deterministic |

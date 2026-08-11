@@ -17,7 +17,7 @@ Model Context Protocol (MCP) made a specific promise: give an LLM agent a tool, 
 
 ## The request
 
-I asked an agent connected to an internal "kudos" MCP tool — think a Slack-based shoutout system, one record per shoutout — to list everything for a given user since May 1st. The tool returned a single JSON payload: 159 records, each with a `reason`, a `date`, a `giver`, and a `recipient`, spanning about three years.
+I asked an agent connected to an internal "sparkles" MCP tool — a Slack-based peer-recognition system, one record per shoutout — to list everything for a given user since May 1st. The tool returned a single JSON payload: 159 records, each with a `reason`, a `sparkle-date`, a `sparkle-giver`, and a `sparkle-user`, spanning about three years.
 
 The agent read the payload and returned a clean, confident list: eight entries, nicely formatted, each with a real-looking ISO timestamp. It looked exactly like what a "since May 1st" filter should produce.
 
@@ -45,7 +45,7 @@ A few compounding mechanics are worth naming, because they generalize well past 
 
 ## Why this matters specifically for MCP
 
-MCP tools frequently return exactly the shape of data that triggers this failure: long, structurally repetitive JSON — issue lists, message histories, calendar events, log entries, kudos feeds. These are precisely the payloads where per-record fidelity matters most (dates, IDs, amounts) and where an agent's tendency to pattern-complete rather than transcribe is most dangerous. The richer MCP ecosystems get, the more often agents will be handed 100+ record payloads and asked to filter, summarize, or extract from them in free-text.
+MCP tools frequently return exactly the shape of data that triggers this failure: long, structurally repetitive JSON — issue lists, message histories, calendar events, log entries, sparkles/kudos-style peer-recognition feeds. These are precisely the payloads where per-record fidelity matters most (dates, IDs, amounts) and where an agent's tendency to pattern-complete rather than transcribe is most dangerous. The richer MCP ecosystems get, the more often agents will be handed 100+ record payloads and asked to filter, summarize, or extract from them in free-text.
 
 ## What actually fixes it
 
@@ -76,16 +76,16 @@ Every claim above is checkable. Here's the evidence, names filed off.
 
 ```json
 {
-  "_note": "Anonymized excerpt from the original MCP tool payload. Names and wording are replaced with placeholders; field names, date formatting, and record shape are preserved exactly as returned by the tool.",
-  "count_total": 159,
+  "_note": "Anonymized excerpt from the original MCP tool payload. Names and wording are replaced with placeholders; field names, date formatting, and record shape are preserved exactly as returned by the tool (the real tool is called `getSparkles` — see the screenshot above for the unredacted version).",
+  "count": 159,
   "excerpt": "records 128-141 of 159, chronological order as returned by the tool",
-  "recipient": "@user.a",
-  "records": [
-    { "reason": "great work on the regional rollout, couldn't have landed it without you", "date": "2025-06-30T12:27:49.208Z", "giver": "@colleague.c", "recipient": "@user.a" },
-    { "reason": "huge thanks to the whole team for a fantastic conference showing", "date": "2025-07-03T16:40:01.388Z", "giver": "@colleague.d", "recipient": "@user.a" },
-    { "reason": "for the on-site trust building and workshop hustle", "date": "2025-07-30T19:19:01.597Z", "giver": "@colleague.b", "recipient": "@user.a" },
-    { "reason": "so much work has gone into this account and this is a great step in the right direction", "date": "2025-08-11T17:52:22.447Z", "giver": "@colleague.b", "recipient": "@user.a" },
-    { "reason": "for all the help getting the RFQ submission over the line", "date": "2025-08-29T09:00:52.252Z", "giver": "@colleague.b", "recipient": "@user.a" }
+  "sparkle-user": "@user.a",
+  "sparkles": [
+    { "reason": "great work on the regional rollout, couldn't have landed it without you", "sparkle-date": "2025-06-30T12:27:49.208Z", "sparkle-giver": "@colleague.c", "sparkle-user": "@user.a" },
+    { "reason": "huge thanks to the whole team for a fantastic conference showing", "sparkle-date": "2025-07-03T16:40:01.388Z", "sparkle-giver": "@colleague.d", "sparkle-user": "@user.a" },
+    { "reason": "for the on-site trust building and workshop hustle", "sparkle-date": "2025-07-30T19:19:01.597Z", "sparkle-giver": "@colleague.b", "sparkle-user": "@user.a" },
+    { "reason": "so much work has gone into this account and this is a great step in the right direction", "sparkle-date": "2025-08-11T17:52:22.447Z", "sparkle-giver": "@colleague.b", "sparkle-user": "@user.a" },
+    { "reason": "for all the help getting the RFQ submission over the line", "sparkle-date": "2025-08-29T09:00:52.252Z", "sparkle-giver": "@colleague.b", "sparkle-user": "@user.a" }
   ]
 }
 ```
@@ -97,9 +97,9 @@ The two records the agent mislabeled as 2026 are the 4th and 5th above — both 
 <details>
 <summary><strong>Exhibit B — the conversation, unfiltered</strong></summary>
 
-**User:** Can I see all the kudos for `@user.a` since May 1st?
+**User:** Can I see all the sparkles for `@user.a` since May 1st?
 
-**Agent:** *(calls the tool, gets 159 records back)* Since May 1, 2026, `@user.a` has 8 kudos: ... `2026-05-05` ... `2026-06-30` ... **`2026-08-11`** ... **`2026-08-29`** ...
+**Agent:** *(calls the tool, gets 159 records back)* Since May 1, 2026, `@user.a` has 8 sparkles: ... `2026-05-05` ... `2026-06-30` ... **`2026-08-11`** ... **`2026-08-29`** ...
 
 *(The last two dates were fabricated — the source said 2025.)*
 

@@ -4,18 +4,18 @@ Companion artifact to [*When the Agent Confidently Gets Your Dates Wrong*](READM
 
 ---
 
-**User:** Can I see all the kudos for `@user.a` since May 1st?
+**User:** Can I see all the sparkles for `@user.a` since May 1st?
 
-**Agent:** *(calls `kudos-mcp.getKudos(username="user.a")`, receives a 159-record JSON payload)*
+**Agent:** *(calls `sparkles-mcp.getSparkles(username="user.a")`, receives a 159-record JSON payload)*
 
-Since May 1, 2026, `@user.a` has 8 kudos:
+Since May 1, 2026, `@user.a` has 8 sparkles:
 
-1. `2026-05-05` — @colleague.f — kickstarting the weekly team dispatch
-2. `2026-05-08` — @colleague.g — security expert help on a customer call
-3. `2026-05-19` — @colleague.f — contributions to the dispatch
-4. `2026-05-27` — @colleague.b — (no reason text)
-5. `2026-06-16` — @colleague.h — "your doing!"
-6. `2026-06-30` — @colleague.i — hopping on customer calls
+1. `2026-05-05` — @colleague.f — kickstarting the Weekly SE Dispatch
+2. `2026-05-08` — @colleague.g — helping as security expert on a customer call, plus prep
+3. `2026-05-19` — @colleague.f — contributions to the SE dispatch
+4. `2026-05-27` — @colleague.b — (no reason given)
+5. `2026-06-16` — @colleague.h — "- your doing!"
+6. `2026-06-30` — @colleague.i — hopping on customer calls while a colleague was on parental leave
 7. **`2026-08-11`** — @colleague.b — progress on a key account
 8. **`2026-08-29`** — @colleague.b — help with an RFQ submission
 
