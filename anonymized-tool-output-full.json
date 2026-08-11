@@ -1,0 +1,962 @@
+{
+  "_note": "Full anonymized list (159 of 159 records) from the original MCP tool payload discussed in 'When the Agent Confidently Gets Your Dates Wrong'. Dates are unmodified. Colleague usernames are replaced with @colleague-NN codes, consistent within this file (same code = same real person) but NOT aligned with the shorter excerpt shown in the README. Customer/company names mentioned inside free-text reasons are replaced with [account]; public open-source tools, competitor product names, and public event names are left as-is.",
+  "count": 159,
+  "sparkle-user": "@user.a",
+  "giver_count": 44,
+  "sparkles": [
+    {
+      "reason": "for helping to prevent [account] from moving to ReadyAPI and making them hungry for a Postman consolidation instead!",
+      "sparkle-date": "2023-07-26T08:59:39.492Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "- thank you for creating the GitHub Action-based IssueOps workflow",
+      "sparkle-date": "2023-07-26T11:30:25.264Z",
+      "sparkle-giver": "@colleague-02",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "Happy Birthday",
+      "sparkle-date": "2023-08-11T07:01:00.531Z",
+      "sparkle-giver": "@colleague-03",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for birthdays!",
+      "sparkle-date": "2023-08-11T13:31:28.549Z",
+      "sparkle-giver": "@colleague-04",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for All Hands shoutout from [colleague]!",
+      "sparkle-date": "2023-08-14T17:36:14.788Z",
+      "sparkle-giver": "@colleague-04",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for helping your APAC Friends out overnight our time.  :hearthands:",
+      "sparkle-date": "2023-08-16T04:45:02.560Z",
+      "sparkle-giver": "@colleague-03",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for super team work QBR prep and presentation :bow:",
+      "sparkle-date": "2023-09-06T10:22:55.447Z",
+      "sparkle-giver": "@colleague-05",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for working [account] magic",
+      "sparkle-date": "2023-09-08T14:57:46.761Z",
+      "sparkle-giver": "@colleague-05",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for squeezing in and delivering a great on-site talk with [account]’ API team in Berlin before heading off to the Gartner conference in London same day!",
+      "sparkle-date": "2023-09-12T15:24:27.770Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "- super appreciate your help mate.",
+      "sparkle-date": "2023-09-13T08:58:51.446Z",
+      "sparkle-giver": "@colleague-03",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "to . It was so heartening to see her on stage for our customer panel. There's nothing better than when your teammates are your inspiration. She led a fantastic discussion and worked magic to make the Gartner Summit an excellent event.\n\nThe panel was well-attended and clearly well-received, judging by the queue for @colleague-43' demo. Thank you and /sparkle to  for his incredible insights. I'm a big fan of the [account] analogy.",
+      "sparkle-date": "2023-09-15T09:05:04.038Z",
+      "sparkle-giver": "@colleague-06",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "follow-up :bowgif: Thanks!!!",
+      "sparkle-date": "2023-09-20T16:06:57.189Z",
+      "sparkle-giver": "@colleague-05",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "winning!",
+      "sparkle-date": "2023-09-21T13:00:39.416Z",
+      "sparkle-giver": "@colleague-07",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "keeping an eye for the team :muscle:",
+      "sparkle-date": "2023-09-22T09:11:39.474Z",
+      "sparkle-giver": "@colleague-07",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for magic help with this deal and...",
+      "sparkle-date": "2023-09-25T09:48:17.611Z",
+      "sparkle-giver": "@colleague-05",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": ":de: :rocket: :muscle:",
+      "sparkle-date": "2023-09-25T10:43:36.932Z",
+      "sparkle-giver": "@colleague-07",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for [account] awesomeness",
+      "sparkle-date": "2023-09-26T08:14:03.999Z",
+      "sparkle-giver": "@colleague-08",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "this is truly the work of brilliance, I can only imagine how hard this was with all the constrains today :bow:",
+      "sparkle-date": "2023-09-26T09:25:38.769Z",
+      "sparkle-giver": "@colleague-07",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "great demo content :clap:",
+      "sparkle-date": "2023-10-12T09:38:59.504Z",
+      "sparkle-giver": "@colleague-07",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "or :star: SE support :top: :bow: :thx:",
+      "sparkle-date": "2023-10-18T12:37:02.644Z",
+      "sparkle-giver": "@colleague-05",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": ":thankyou:",
+      "sparkle-date": "2023-10-18T17:56:43.345Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for a killer presentation on [account]’s Learning &amp; Innovation Day! :man-bowing: :postmanaut-give-heart:",
+      "sparkle-date": "2023-10-20T13:00:32.785Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "on cracking [account] planning :bow:",
+      "sparkle-date": "2023-10-23T08:24:21.427Z",
+      "sparkle-giver": "@colleague-07",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "",
+      "sparkle-date": "2023-10-26T17:35:08.562Z",
+      "sparkle-giver": "@colleague-04",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "[account] !!",
+      "sparkle-date": "2023-10-30T22:36:08.007Z",
+      "sparkle-giver": "@colleague-09",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "- no words :bow:",
+      "sparkle-date": "2023-11-01T10:49:02.770Z",
+      "sparkle-giver": "@colleague-07",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for a great Octodex demo that's awesome and super easy to re-use",
+      "sparkle-date": "2023-11-08T10:29:14.062Z",
+      "sparkle-giver": "@colleague-07",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "paving the way fw for the whole team :bow:",
+      "sparkle-date": "2023-11-21T11:49:48.240Z",
+      "sparkle-giver": "@colleague-07",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for realtime looker help :heart:",
+      "sparkle-date": "2023-11-29T09:24:15.568Z",
+      "sparkle-giver": "@colleague-05",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for realtime looker help :bowgif:",
+      "sparkle-date": "2023-11-29T09:29:41.309Z",
+      "sparkle-giver": "@colleague-05",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for submitting 3 PRs to the local mock server project. Merged and pushed v0.0.12!",
+      "sparkle-date": "2023-12-11T02:26:48.384Z",
+      "sparkle-giver": "@colleague-10",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for amazing work with [account] :man-bowing::fire:",
+      "sparkle-date": "2023-12-15T08:23:53.715Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for the [account] win :party_parrot:",
+      "sparkle-date": "2023-12-19T08:34:17.765Z",
+      "sparkle-giver": "@colleague-05",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "[account]!!!",
+      "sparkle-date": "2023-12-19T09:55:59.432Z",
+      "sparkle-giver": "@colleague-07",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": ":clapping: such a great deal!!",
+      "sparkle-date": "2023-12-19T19:53:28.536Z",
+      "sparkle-giver": "@colleague-05",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for very :star: backchannel [account] info :bowgif:",
+      "sparkle-date": "2024-01-22T17:01:16.171Z",
+      "sparkle-giver": "@colleague-05",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for being awesome and saving my a** multiple times during a stressful week :postmanaut-give-heart:",
+      "sparkle-date": "2024-02-08T09:18:44.502Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for magic help while I was on PTO last week :bowgif:  you're the best!",
+      "sparkle-date": "2024-02-12T22:39:36.105Z",
+      "sparkle-giver": "@colleague-05",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "who also helped me while @colleague-05 was OOO, I owe you one :bow:",
+      "sparkle-date": "2024-02-19T16:38:46.389Z",
+      "sparkle-giver": "@colleague-11",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": ", thank you for helping me find a better workaround for signing commits on GitHub!",
+      "sparkle-date": "2024-02-29T10:27:43.483Z",
+      "sparkle-giver": "@colleague-02",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "massive kudos to  for his help in highlighting where Insomnia falls short. I have gathered good intel to help the team win [account] back now.",
+      "sparkle-date": "2024-03-05T14:34:32.542Z",
+      "sparkle-giver": "@colleague-02",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for successful guerilla prospecting at FOSS Backstage in Berlin last week :fire:",
+      "sparkle-date": "2024-03-11T12:55:59.061Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "crazier prospecting endeavour I remember",
+      "sparkle-date": "2024-03-11T12:57:36.860Z",
+      "sparkle-giver": "@colleague-07",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for the [account] win :slightly_smiling_face: first land with [account], the Germans are next!",
+      "sparkle-date": "2024-03-14T08:44:55.840Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "what a great win!!!",
+      "sparkle-date": "2024-03-14T09:35:11.336Z",
+      "sparkle-giver": "@colleague-07",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "on a brilliant document around version control collaboration at scale :bow:",
+      "sparkle-date": "2024-03-14T13:36:14.632Z",
+      "sparkle-giver": "@colleague-07",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for [account]! :sparkles:",
+      "sparkle-date": "2024-03-28T09:06:56.225Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for fantastic help and patience with the security assessment",
+      "sparkle-date": "2024-03-28T09:19:43.865Z",
+      "sparkle-giver": "@colleague-05",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "great deal :clap: :clap: :clap:",
+      "sparkle-date": "2024-03-28T09:31:16.053Z",
+      "sparkle-giver": "@colleague-07",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "great deal :clap: :clap: :clap:",
+      "sparkle-date": "2024-03-28T09:31:16.717Z",
+      "sparkle-giver": "@colleague-07",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for helping to build the executive relationship with our champion and generally being a huge fan boy of [account] :stuck_out_tongue:",
+      "sparkle-date": "2024-04-11T15:57:11.121Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "another time for [account] :slightly_smiling_face:",
+      "sparkle-date": "2024-04-11T15:58:32.734Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for lots of onboarding help",
+      "sparkle-date": "2024-04-12T11:11:25.405Z",
+      "sparkle-giver": "@colleague-12",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for the ScratchPad guidance",
+      "sparkle-date": "2024-04-15T13:51:36.842Z",
+      "sparkle-giver": "@colleague-13",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for [account] :slightly_smiling_face: :man-bowing:",
+      "sparkle-date": "2024-04-15T18:56:31.849Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "great closes!",
+      "sparkle-date": "2024-04-16T08:00:50.744Z",
+      "sparkle-giver": "@colleague-07",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for your help on [account]!",
+      "sparkle-date": "2024-04-16T17:18:52.662Z",
+      "sparkle-giver": "@colleague-14",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "",
+      "sparkle-date": "2024-04-16T17:53:07.281Z",
+      "sparkle-giver": "@colleague-07",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "massive kudos to  as well for his contributions in getting the plugins live! Without him, we wouldn't have been able to make them open source in such a short period of time",
+      "sparkle-date": "2024-04-28T15:31:41.773Z",
+      "sparkle-giver": "@colleague-02",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for an amazing backstage-Postman integration demo :muscle: that was super helpful",
+      "sparkle-date": "2024-05-14T09:34:39.156Z",
+      "sparkle-giver": "@colleague-05",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for making [account] laugh because they enjoyed his Postman demo so much - #majorsunburn :party_blob:",
+      "sparkle-date": "2024-05-27T13:42:30.092Z",
+      "sparkle-giver": "@colleague-05",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "a Backstage integration :yellow_heart:",
+      "sparkle-date": "2024-05-28T16:27:06.467Z",
+      "sparkle-giver": "@colleague-07",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for addressing many of our questions!",
+      "sparkle-date": "2024-05-29T16:54:16.448Z",
+      "sparkle-giver": "@colleague-15",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "DB goodness :heart:",
+      "sparkle-date": "2024-06-05T14:35:54.168Z",
+      "sparkle-giver": "@colleague-07",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for lots of help with [account] and Security questionnaires",
+      "sparkle-date": "2024-06-07T09:30:22.024Z",
+      "sparkle-giver": "@colleague-12",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for their great work with the customer’s teams, helping to multiplying [account]’ spend with us with this upgrade :man-bowing:",
+      "sparkle-date": "2024-06-17T07:49:41.399Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "you rock!!!",
+      "sparkle-date": "2024-06-17T09:08:34.943Z",
+      "sparkle-giver": "@colleague-07",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "To the incredible team behind the launch of our newest customer story for [account]!  It takes a village to nurture a customer relationship to the point where they are _*excited*_ to tell their story publicly.  When that customer is the size of [account], the village is even more critical.  Thank you endlessly to all current and former members of the amazing team behind [account]' success.   :postmanaut-give-heart:",
+      "sparkle-date": "2024-06-20T15:08:02.333Z",
+      "sparkle-giver": "@colleague-16",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": ", great work with [account] :slightly_smiling_face: :thankyou:",
+      "sparkle-date": "2024-06-20T16:07:28.499Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for taking the Backstage plugins and app to the next level :relieved:",
+      "sparkle-date": "2024-06-25T09:18:46.189Z",
+      "sparkle-giver": "@colleague-02",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for helping with EU data center discussions",
+      "sparkle-date": "2024-07-01T10:25:20.487Z",
+      "sparkle-giver": "@colleague-12",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for that pun and supdash wizardry",
+      "sparkle-date": "2024-07-03T14:39:14.019Z",
+      "sparkle-giver": "@colleague-17",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for your help with Looker!",
+      "sparkle-date": "2024-07-05T14:01:04.115Z",
+      "sparkle-giver": "@colleague-02",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for their amazing work with [account] :man-bowing::postmanaut-give-heart:",
+      "sparkle-date": "2024-07-12T21:27:40.526Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "",
+      "sparkle-date": "2024-07-17T10:45:05.670Z",
+      "sparkle-giver": "@colleague-02",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "to  for your amazing help at WeAreDevelopers Congress event, helping gather a staggering 1700 leads!!!! :clap::skin-tone-2:",
+      "sparkle-date": "2024-07-22T12:44:27.188Z",
+      "sparkle-giver": "@colleague-18",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "and I having the first conversation with [account]’s Head of Cloud Operations at the Gartner conference in London last year,  thinking “oh wow, this guy won’t stop talking” well into a 30min+ conversation at our booth that went far beyond Postman :joy:. Well, glad he didn’t stop :wink: 200+ emails and 10 meetings later he was the main contact pushing for this purchase :raised_hands:",
+      "sparkle-date": "2024-07-26T08:48:19.172Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "and I having the first conversation with [account]’s Head of Cloud Operations at the Gartner conference in London last year,  thinking “oh wow, this guy won’t stop talking” well into a 30min+ conversation at our booth that went far beyond Postman :joy:. Well, glad he didn’t stop :wink: 200+ emails and 10 meetings later he was the main contact pushing for this purchase :raised_hands:",
+      "sparkle-date": "2024-07-26T08:48:19.202Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "right back at ya.",
+      "sparkle-date": "2024-08-02T14:58:39.448Z",
+      "sparkle-giver": "@colleague-05",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for stepping up and keeping us on course :compass: :sparkles: :thankyou:",
+      "sparkle-date": "2024-08-02T18:32:55.457Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for [account]! What a long and weird process to get this one over the line!!! :sloth::car:",
+      "sparkle-date": "2024-09-18T09:21:18.799Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "thanks for your impact for the EMEA team, creative demos, customer obsession, humor, and not at least dj'ing skills! Wishing you all the best with the next adventure :postman-rocket:",
+      "sparkle-date": "2024-09-27T08:33:02.249Z",
+      "sparkle-giver": "@colleague-19",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "",
+      "sparkle-date": "2024-09-27T08:39:49.332Z",
+      "sparkle-giver": "@colleague-03",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "",
+      "sparkle-date": "2024-09-27T08:39:49.335Z",
+      "sparkle-giver": "@colleague-03",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": ":sparkles:-fest!!!",
+      "sparkle-date": "2024-09-27T08:40:33.014Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "- we will definitely miss your genius mind and humour!",
+      "sparkle-date": "2024-09-27T08:52:30.351Z",
+      "sparkle-giver": "@colleague-02",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "it wasn’t just a sprinkle of humor you brought, thoroughly enjoyed working with you and and will definitely miss you!",
+      "sparkle-date": "2024-09-27T09:10:34.923Z",
+      "sparkle-giver": "@colleague-20",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for the analogies - fabulous storytelling :blob-clap:",
+      "sparkle-date": "2024-09-27T09:27:45.868Z",
+      "sparkle-giver": "@colleague-06",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "because he deserves 100 sparkles on his last day :star:",
+      "sparkle-date": "2024-09-27T10:01:34.636Z",
+      "sparkle-giver": "@colleague-05",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "you will be missed! Thank you for all your guidance",
+      "sparkle-date": "2024-09-27T10:04:49.027Z",
+      "sparkle-giver": "@colleague-21",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "road to 100 sparkles and a lasting legacy, you’ll be missed!",
+      "sparkle-date": "2024-09-27T10:08:34.055Z",
+      "sparkle-giver": "@colleague-12",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "!!!!!!!!!!!!!!",
+      "sparkle-date": "2024-09-27T13:14:50.732Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "going to miss you!!!",
+      "sparkle-date": "2024-09-27T13:16:49.857Z",
+      "sparkle-giver": "@colleague-22",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "one of a kind!!",
+      "sparkle-date": "2024-09-27T14:44:28.635Z",
+      "sparkle-giver": "@colleague-23",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for the most underplayed return to Slack  :smile: WELCOME BACK!",
+      "sparkle-date": "2025-01-15T11:26:28.568Z",
+      "sparkle-giver": "@colleague-19",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for coming back.",
+      "sparkle-date": "2025-01-16T14:28:58.454Z",
+      "sparkle-giver": "@colleague-24",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "checking if he kept his sparkles!",
+      "sparkle-date": "2025-01-16T20:06:34.577Z",
+      "sparkle-giver": "@colleague-23",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "who actually started this conversation and came back just to see them close",
+      "sparkle-date": "2025-01-29T08:14:21.474Z",
+      "sparkle-giver": "@colleague-12",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for getting the backstage integration up and running on a Friday night in the nick of time to achieve a truly :mic-drop: moment with [account]",
+      "sparkle-date": "2025-02-07T18:04:04.387Z",
+      "sparkle-giver": "@colleague-25",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "!!",
+      "sparkle-date": "2025-02-11T17:05:49.767Z",
+      "sparkle-giver": "@colleague-02",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "- thank you again for your help containerising some of my apps!",
+      "sparkle-date": "2025-02-11T17:07:16.116Z",
+      "sparkle-giver": "@colleague-02",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for putting together all necessary Trust-159 info for the sec team :bowgif:",
+      "sparkle-date": "2025-02-18T16:32:40.420Z",
+      "sparkle-giver": "@colleague-05",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for pointing this out as a great opportunity :bowgif: :ty:",
+      "sparkle-date": "2025-03-10T17:28:34.863Z",
+      "sparkle-giver": "@colleague-05",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for running an SE office hour on Bruno",
+      "sparkle-date": "2025-03-14T14:02:17.094Z",
+      "sparkle-giver": "@colleague-05",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for ongoing support with [account] on many fronts  :ty::partying_face:",
+      "sparkle-date": "2025-03-27T16:50:36.919Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for helping me out on multiple fronts including Bruno competitive messaging and AI agent use cases + demo preparation material... and just for his overall genius",
+      "sparkle-date": "2025-04-03T14:22:59.493Z",
+      "sparkle-giver": "@colleague-26",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for delivering a great overview session of Postman to our new Postman owner at [account] :muscle:",
+      "sparkle-date": "2025-04-17T08:37:42.394Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for winning the ERP customer challenge :fire:",
+      "sparkle-date": "2025-04-24T16:03:37.974Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for winning both 1st and 2nd place, putting EMEA on the map! :world: :dart:",
+      "sparkle-date": "2025-04-24T16:07:03.917Z",
+      "sparkle-giver": "@colleague-11",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "!",
+      "sparkle-date": "2025-04-24T16:33:48.562Z",
+      "sparkle-giver": "@colleague-02",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "great team effort consistently growing the [account] deployment  :ty:",
+      "sparkle-date": "2025-04-29T07:02:42.824Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "",
+      "sparkle-date": "2025-04-30T18:33:19.109Z",
+      "sparkle-giver": "@colleague-27",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "great work with [account] over the past few months, building our champion there :ty:",
+      "sparkle-date": "2025-05-20T07:34:42.915Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for all the things, particularly his patient assistance with my dumb questions I'm too embarrassed to ask publicly over the years",
+      "sparkle-date": "2025-05-22T15:14:57.790Z",
+      "sparkle-giver": "@colleague-25",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for your valuable support on the [account] call, addressing their security concerns in light of the recent anonymous blog post.",
+      "sparkle-date": "2025-05-26T12:35:22.661Z",
+      "sparkle-giver": "@colleague-28",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for [account] Teamwork :muscle:",
+      "sparkle-date": "2025-05-28T06:21:00.552Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for phenomenal team work at the AWS Summit Hamburg :raised_hands:",
+      "sparkle-date": "2025-06-05T17:26:02.402Z",
+      "sparkle-giver": "@colleague-29",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for demoing Postman’s capabilities for 10h straight with no breaks :heart:",
+      "sparkle-date": "2025-06-06T09:32:58.998Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for great support with onboarding, ramping up and Account handovers",
+      "sparkle-date": "2025-06-06T18:14:58.404Z",
+      "sparkle-giver": "@colleague-30",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "helping [account] to make onboarding of new users smooth and easy :ty:",
+      "sparkle-date": "2025-06-11T18:44:31.396Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "",
+      "sparkle-date": "2025-06-30T12:27:49.208Z",
+      "sparkle-giver": "@colleague-02",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "*to the apidays Munich Dream Team!* :sparkles: \nHuge THANK YOU to everyone who helped make the *first edition of API Days Munich* a total success! :tada:\n:boom: We captured *150+ leads*,\n :microphone: Had *80+ engaged attendees* across our *talk + workshop*,\n :handshake: And kept the booth buzzing with energy, curiosity, and great conversations.\n*Special shoutout to*  for his *non-stop, top-notch demoing* — you were a machine! :mechanical_arm:\n And a big warm *welcome + bravo to*  on her first event with us — you absolutely crushed it and made a stellar impression! :star2:\nLet’s keep the momentum going — *go Team Germany!* :de:\n *– Auf geht’s, Team Deutschland!* :rocket:",
+      "sparkle-date": "2025-07-03T16:40:01.388Z",
+      "sparkle-giver": "@colleague-18",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": ", in-app message campaigns, building trust with our champion on-site (while listening to his ramblings that typically take 50% of any meeting :joy:), guerrilla marketing at events with [account] participation in the region, pitching agent mode and MCP, eliminating security and compliance concerns, you name it! Thanks for all the hard work and the fun along the way my friend :heart:",
+      "sparkle-date": "2025-07-30T19:19:01.597Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "so much work has gone into the account and this is a great step in the right direction with MB! :orange_heart:",
+      "sparkle-date": "2025-08-11T17:52:22.447Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for all the help with the [account] RFQ submission that we just completed! :crossed_fingers::muscle::skin-tone-2::man-bowing:",
+      "sparkle-date": "2025-08-29T09:00:52.252Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "What a week at *Gartner AIBS EMEA*! :rocket: We had over 140 people in our session, smashed our target with *350+ leads* (vs our 160 target!), and spent two packed days in conversations and demos with C-levels and executives from leading banks, insurers, [account], [account], universities and more. Huge thanks to the brilliant onsite team who made it all happen :clap:\n \nSpecial kudos to  who cycled more than 23km (one-way!) both days to make it to the event due to tube strike :bike: :clapping:",
+      "sparkle-date": "2025-09-09T15:43:30.340Z",
+      "sparkle-giver": "@colleague-18",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "Huge kudos to the apidays London crew! 2.5 days of nonstop convos, demos, Q&amp;A + swag, with 12+ Postmanauts repping Postman and gathering over 400+ leads! :yellow_heart:. One packed workshop + two stellar talks = Postman shining bright :rocket: . And we connected with big logos like [account], [account], [account], [account], [account], [account], [account], [account], [account], and [account], amongst many others! :tada:",
+      "sparkle-date": "2025-09-24T15:46:38.166Z",
+      "sparkle-giver": "@colleague-18",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "deal engineering, agent mode on the booth and advocacy in a room full of API geeks at his apidays talks - each time I see @colleague-43 work, I am inspired to push myself further. its not an understatement to say that you are an expert of your craft and provide kind mentorship and support to anybody that needs it. if the recursion worked i would...!\n\n```for (int i = 0; i &lt; env.MAX_INT; i++) {\n  slack_eval('/sparkle @user.a');\n  \n  //for long trips only:\n  //slack_eval('/remind @@colleague-18 'can you order me another tshirt pls?' everyday')\n}```",
+      "sparkle-date": "2025-09-24T17:22:18.525Z",
+      "sparkle-giver": "@colleague-23",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "thank you all! 3 more years with a great customer!",
+      "sparkle-date": "2025-09-30T22:05:36.313Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for proactively securing a hybrid MCP workshop with [account]s AI Innovation team :muscle::orange_heart:",
+      "sparkle-date": "2025-10-10T11:49:55.205Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for the continued success with [account] :man-bowing:",
+      "sparkle-date": "2025-10-15T07:17:21.370Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for going through his APIdays workshop and sharing enlightening tips :slightly_smiling_face: Much appreciated",
+      "sparkle-date": "2025-10-15T09:05:01.156Z",
+      "sparkle-giver": "@colleague-31",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "",
+      "sparkle-date": "2025-10-17T16:37:38.203Z",
+      "sparkle-giver": "@colleague-32",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "",
+      "sparkle-date": "2025-10-17T16:37:38.226Z",
+      "sparkle-giver": "@colleague-32",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "helping to secure this win by handling an unexpected, spontaneous and slightly rude interrogation from their department head about our security posture in a very calm and professional way",
+      "sparkle-date": "2025-10-24T06:56:04.724Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "great work with [account], we are just getting started! :raised_hands:",
+      "sparkle-date": "2025-10-27T18:36:15.673Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for an amazing MCP workshop to [account]s BTP AI Community in Potsdam today :rocket:",
+      "sparkle-date": "2025-10-30T15:41:32.873Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "amazing team work here everyone, thank you very much :man-bowing::postmanaut-give-heart:",
+      "sparkle-date": "2025-11-07T13:17:18.369Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "always ready to jump in last minute when needed! :bow:",
+      "sparkle-date": "2025-12-18T10:11:43.816Z",
+      "sparkle-giver": "@colleague-11",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "thank you for the great SE session today :star-struck::pray:",
+      "sparkle-date": "2025-12-19T12:06:44.375Z",
+      "sparkle-giver": "@colleague-33",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "great teamwork to get the contract renewed and expanded :ty:",
+      "sparkle-date": "2026-01-29T13:24:21.142Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "raising the valid topics :clap:",
+      "sparkle-date": "2026-02-12T11:08:02.623Z",
+      "sparkle-giver": "@colleague-34",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "For an awesome job during the 6 Habits of Highly Successful Sales Engineers session. Thank you all!",
+      "sparkle-date": "2026-02-26T01:05:12.664Z",
+      "sparkle-giver": "@colleague-35",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for a great session with [account]’ Grid Simulation &amp; Grid Resilience team at KubeCon this week, including a very spontaneous demo around API governance, advanced mocking as well as partner workspaces :ty::clapping:",
+      "sparkle-date": "2026-03-26T17:29:01.024Z",
+      "sparkle-giver": "@colleague-01",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "",
+      "sparkle-date": "2026-03-31T10:50:09.793Z",
+      "sparkle-giver": "@colleague-02",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for the great FrankenstAIn (Postman as the Immune System) enablement session :male_zombie::raised_hands:",
+      "sparkle-date": "2026-04-01T09:42:32.562Z",
+      "sparkle-giver": "@colleague-36",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for an amazing enablement session!",
+      "sparkle-date": "2026-04-01T09:59:12.243Z",
+      "sparkle-giver": "@colleague-05",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for a brilliant enablement session and for your great metaphors :whos-awesome-youre-awesome:",
+      "sparkle-date": "2026-04-01T10:35:26.610Z",
+      "sparkle-giver": "@colleague-29",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for your support for enablement and helping the seller team in telling a powerful use case story, by delivering a brilliant 'Postman as the Immune system' presentation. deck:orange_book:, and the recording :movie_camera: if you would like to see it.",
+      "sparkle-date": "2026-04-01T11:08:45.515Z",
+      "sparkle-giver": "@colleague-37",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "",
+      "sparkle-date": "2026-04-01T11:08:46.735Z",
+      "sparkle-giver": "@colleague-38",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for being such a great co-pilot on customer calls. Every time I leave a call, I walk away more knowledgeable and better equipped to navigate conversations strategically. :gold:",
+      "sparkle-date": "2026-04-22T15:32:09.005Z",
+      "sparkle-giver": "@colleague-39",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for jumping in to help me get access to our GitHub org. Quick,\n  painless, and saved me a bunch of time",
+      "sparkle-date": "2026-04-23T16:39:15.427Z",
+      "sparkle-giver": "@colleague-40",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "great work on the Demo with [account]. Turning a disinterested customer around! Thank you for your effort",
+      "sparkle-date": "2026-04-29T08:57:59.727Z",
+      "sparkle-giver": "@colleague-41",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for kickstarting this round of the Weekly SE Dispatch :orange_heart:",
+      "sparkle-date": "2026-05-05T15:20:31.318Z",
+      "sparkle-giver": "@colleague-29",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for helping me as a Security Expert on a customer call, plus positioning Postman experience with European customer with hard security requirements. Also, for bombarding me with info to prep the call. Thanks mate!",
+      "sparkle-date": "2026-05-08T14:23:27.394Z",
+      "sparkle-giver": "@colleague-42",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for your contributions to the SE dispatch :orange_heart:",
+      "sparkle-date": "2026-05-19T12:57:47.456Z",
+      "sparkle-giver": "@colleague-29",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "",
+      "sparkle-date": "2026-05-27T10:25:31.783Z",
+      "sparkle-giver": "@colleague-02",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "- your doing!",
+      "sparkle-date": "2026-06-16T13:06:53.287Z",
+      "sparkle-giver": "@colleague-43",
+      "sparkle-user": "@user.a"
+    },
+    {
+      "reason": "for hopping on customer calls with me while @colleague-34 has more important things to take care off.... :baby_bottle: We are very lucky to have you both, you are alright :smile:",
+      "sparkle-date": "2026-06-30T15:30:59.863Z",
+      "sparkle-giver": "@colleague-44",
+      "sparkle-user": "@user.a"
+    }
+  ]
+}

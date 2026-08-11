@@ -90,7 +90,7 @@ Every claim above is checkable. Here's the evidence, names filed off.
 }
 ```
 
-The two records the agent mislabeled as 2026 are the 4th and 5th above — both correctly dated 2025 in the source. [Full excerpt (14 records) →](anonymized-tool-output.json)
+The two records the agent mislabeled as 2026 are the 4th and 5th above — both correctly dated 2025 in the source. [Excerpt (14 records) →](anonymized-tool-output.json) · [Full list (159 records, mostly redacted) →](anonymized-tool-output-full.json)
 
 </details>
 
