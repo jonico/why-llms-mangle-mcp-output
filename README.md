@@ -141,8 +141,6 @@ The two records the agent mislabeled as 2026 are the 4th and 5th above — both 
 
 ---
 
-**A note on how this ended up as a repo instead of a Gist:** the original plan was a proper GitHub Gist. Two tool limitations got in the way — no Gist-creation tool was available, and the connected GitHub App didn't have permission to spin up a new repo either (`403 Resource not accessible by integration`). So Exhibits A–C live here as plain files instead, in a repo a human had to create by hand. Fittingly on-theme: know exactly what a tool can and can't do before you promise the output.
-
 ### Further reading
 
 - [MCP goes stateless — and Postman's ready](https://blog.postman.com/mcp-goes-stateless-and-postmans-ready/) — Postman Blog
