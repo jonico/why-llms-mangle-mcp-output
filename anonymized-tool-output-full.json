@@ -1,5 +1,5 @@
 {
-  "_note": "Full anonymized list (159 of 159 records) from the original MCP tool payload discussed in 'When the Agent Confidently Gets Your Dates Wrong'. Dates are unmodified. Colleague usernames are replaced with @colleague-NN codes, consistent within this file (same code = same real person) but NOT aligned with the shorter excerpt shown in the README. Customer/company names mentioned inside free-text reasons are replaced with [account]; public open-source tools, competitor product names, and public event names are left as-is.",
+  "_note": "Full anonymized list (159 of 159 records) from the original MCP tool payload discussed in '200 OK, Wrong Answer'. Dates are unmodified. Colleague usernames are replaced with @colleague-NN codes, consistent within this file (same code = same real person) but NOT aligned with the shorter excerpt shown in the README. Customer/company names mentioned inside free-text reasons are replaced with [account]; public open-source tools, competitor product names, and public event names are left as-is.",
   "count": 159,
   "sparkle-user": "@user.a",
   "giver_count": 44,

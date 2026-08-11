@@ -1,6 +1,6 @@
 # Anonymized conversation transcript
 
-Companion artifact to [*When the Agent Confidently Gets Your Dates Wrong*](README.md). Usernames, the internal tool name, and specific record wording are anonymized. The structure, tool calls, and the substance of every reply are preserved.
+Companion artifact to [*200 OK, Wrong Answer*](README.md). Usernames, the internal tool name, and specific record wording are anonymized. The structure, tool calls, and the substance of every reply are preserved.
 
 ---
 

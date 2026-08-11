@@ -1,6 +1,6 @@
 # Model & environment details
 
-Companion artifact to [*When the Agent Confidently Gets Your Dates Wrong*](README.md).
+Companion artifact to [*200 OK, Wrong Answer*](README.md).
 
 | | |
 |---|---|

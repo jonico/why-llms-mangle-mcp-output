@@ -1,5 +1,5 @@
 {
-  "_note": "Anonymized excerpt from the original MCP tool payload discussed in 'When the Agent Confidently Gets Your Dates Wrong'. Names, exact wording, and any identifying detail have been replaced with placeholders. Field names, date formatting, and record shape are preserved exactly as returned by the tool (the real tool is called `getSparkles`; see the screenshot in the README for the unredacted version). This excerpt spans the boundary where the agent's transcription first drifted from 2025 into 2026.",
+  "_note": "Anonymized excerpt from the original MCP tool payload discussed in '200 OK, Wrong Answer'. Names, exact wording, and any identifying detail have been replaced with placeholders. Field names, date formatting, and record shape are preserved exactly as returned by the tool (the real tool is called `getSparkles`; see the screenshot in the README for the unredacted version). This excerpt spans the boundary where the agent's transcription first drifted from 2025 into 2026.",
   "count": 159,
   "sparkle-user": "@user.a",
   "excerpt": "records 128-141 of 159 (0-indexed), chronological order as returned by the tool",
