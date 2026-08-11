@@ -59,6 +59,12 @@ Not better prompting. The fix is to stop asking the model to transcribe long str
 
 > **Tip:** This is what [Postman's MCP Inspector](https://www.postman.com/product/mcp-server/) is actually for. Instead of trusting an agent's paraphrase of what an MCP server returned, Postman lets you send the same `tools/call` request directly and look at the raw JSON-RPC response — the literal bytes the agent was handed, with nothing regenerated in between. It also [now supports the 2026-07-28 MCP spec](https://blog.postman.com/mcp-goes-stateless-and-postmans-ready/), including automatic transport detection (legacy vs. the new stateless transport) and debugging multi-turn flows like elicitation now that there's no session to carry context for you. If you maintain or consume an MCP server, that's the fastest way to answer "is this the tool's data, or the model's retelling of it?" — which is exactly the question this whole incident hinged on.
 
+Here's this exact incident, reproduced live in Postman's AI request builder rather than described secondhand:
+
+![Postman's AI request builder reproducing the sparkles-mcp date-mangling bug, saved to a shared "Sparkles Experiments" collection](llm-mcp-mangling-example.png)
+
+The request is saved as a named item in a shared team collection, not lost in a chat scrollback — anyone on the team can open it, not just whoever happened to be in the original conversation. The right-hand panel shows the raw tool call (`Finished executing tool getSparkles`) alongside the model's prose answer, so the two can be compared directly instead of taking the summary on faith. And the model dropdown makes it trivial to rerun the exact same prompt against a different model (here, switching to Claude Sonnet 4.6) to check whether the mistake is model-specific or reproduces generally — turning a one-off "the agent got this wrong" into an actual, shareable test case instead of a screenshot pasted into Slack.
+
 None of this is exotic. It's the same lesson software engineering already learned about humans transcribing spreadsheets by hand: for anything that has to be exactly right, verify programmatically — don't trust a confident read of a long list, human or otherwise.
 
 ## Receipts
@@ -130,21 +136,6 @@ The two records the agent mislabeled as 2026 are the 4th and 5th above — both 
 > **Caution:** The "long-context attention decay" and "anchoring on the current date" explanations are a diagnosis by symptom — inferred from comparing input and output — not a confirmed root cause from model internals. Treat them as the most parsimonious fit for the observed behavior, not a verified mechanism.
 
 [Full details →](model-details.md)
-
-</details>
-
-<details>
-<summary><strong>Exhibit D — reproducing the bug live in Postman</strong></summary>
-
-![Postman's AI request builder reproducing the sparkles-mcp date-mangling bug, saved to a shared "Sparkles Experiments" collection](llm-mcp-mangling-example.png)
-
-This is the actual incident, reproduced inside Postman's AI request builder rather than described secondhand. A few things worth pointing out in the screenshot:
-
-- The request is saved as a named item ("Showing older entries claiming 2026") inside a shared team collection, not lost in a chat scrollback — anyone on the team can open it, not just whoever happened to be in the original conversation.
-- The right-hand panel shows the raw tool call (`Finished executing tool getSparkles`) alongside the model's prose answer, so the two can be compared directly instead of taking the summary on faith.
-- The model dropdown makes it trivial to rerun the exact same prompt against a different model (here, switching to Claude Sonnet 4.6) to see whether the mistake is model-specific or reproduces generally — turning a one-off "the agent got this wrong" into an actual, shareable test case.
-
-That's the practical version of "inspect the raw wire traffic, not the agent's retelling of it" from above: instead of a screenshot pasted into Slack, it's a versioned, rerunnable artifact your teammates can pull up themselves.
 
 </details>
 
