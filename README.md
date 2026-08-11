@@ -2,8 +2,7 @@
 
 # When the Agent Confidently Gets Your Dates Wrong: A Field Note on LLMs and MCP Tool Output
 
-> [!NOTE]
-> This post walks through a real (anonymized) incident, the mechanics behind it, and what actually fixes it. The full anonymized tool output, agent conversation, and model/environment details are linked at the bottom so you can check the claims yourself instead of taking them on faith — which is, not coincidentally, the whole point of the post.
+> **Note:** This post walks through a real (anonymized) incident, the mechanics behind it, and what actually fixes it. The full anonymized tool output, agent conversation, and model/environment details are linked at the bottom so you can check the claims yourself instead of taking them on faith — which is, not coincidentally, the whole point of the post.
 
 ## Contents
 
@@ -26,8 +25,7 @@ The agent read the payload and returned a clean, confident list: eight entries, 
 
 Two of the eight entries were wrong — not wrong in content, wrong in *year*. The agent had labeled them 2026 when the raw payload said 2025. It only came to light because I happened to screenshot the raw tool output and compare it line by line against the agent's summary. Nothing about the agent's answer signaled uncertainty. It didn't hedge. It cited "raw" timestamps that it had silently altered.
 
-> [!WARNING]
-> When confronted, the agent's first explanation was also wrong: it claimed the tool must be non-deterministic, since a second call "returned different data." It hadn't — a third call proved the payload was byte-for-byte stable across requests. That was a second, independent fabrication, generated with just as much confidence as the first.
+> **Warning:** When confronted, the agent's first explanation was also wrong: it claimed the tool must be non-deterministic, since a second call "returned different data." It hadn't — a third call proved the payload was byte-for-byte stable across requests. That was a second, independent fabrication, generated with just as much confidence as the first.
 
 ## Why this happens
 
@@ -43,8 +41,7 @@ A few compounding mechanics are worth naming, because they generalize well past 
 
 **And when caught, the model can confabulate an explanation just as confidently as it made the original error.** The "the tool must be non-deterministic" claim is the most interesting part of this story. It wasn't a lie in the human sense — it was a plausible-sounding causal story generated to explain a discrepancy, without the model actually diffing the two outputs first. Explaining an error is itself a generation task, subject to the same failure mode as the original transcription.
 
-> [!IMPORTANT]
-> None of this shows up as a confidence score, a warning, or a lower-quality tone. The output format is identical whether the model is transcribing faithfully or confabulating. That's what makes it dangerous — there's no visible signal to distrust.
+> **Important:** None of this shows up as a confidence score, a warning, or a lower-quality tone. The output format is identical whether the model is transcribing faithfully or confabulating. That's what makes it dangerous — there's no visible signal to distrust.
 
 ## Why this matters specifically for MCP
 
@@ -60,8 +57,7 @@ Not better prompting. The fix is to stop asking the model to transcribe long str
 - **Chunk large tool outputs** rather than handing an agent one 150+ record blob and expecting uniform attention across all of it.
 - **Inspect the raw wire traffic, not the agent's retelling of it.** This is the one most people skip, and it's the one that would have caught this bug in seconds.
 
-> [!TIP]
-> **This is what [Postman's MCP Inspector](https://www.postman.com/product/mcp-server/) is actually for.** Instead of trusting an agent's paraphrase of what an MCP server returned, Postman lets you send the same `tools/call` request directly and look at the raw JSON-RPC response — the literal bytes the agent was handed, with nothing regenerated in between. It also [now supports the 2026-07-28 MCP spec](https://blog.postman.com/mcp-goes-stateless-and-postmans-ready/), including automatic transport detection (legacy vs. the new stateless transport) and debugging multi-turn flows like elicitation now that there's no session to carry context for you. If you maintain or consume an MCP server, that's the fastest way to answer "is this the tool's data, or the model's retelling of it?" — which is exactly the question this whole incident hinged on.
+> **Tip:** This is what [Postman's MCP Inspector](https://www.postman.com/product/mcp-server/) is actually for. Instead of trusting an agent's paraphrase of what an MCP server returned, Postman lets you send the same `tools/call` request directly and look at the raw JSON-RPC response — the literal bytes the agent was handed, with nothing regenerated in between. It also [now supports the 2026-07-28 MCP spec](https://blog.postman.com/mcp-goes-stateless-and-postmans-ready/), including automatic transport detection (legacy vs. the new stateless transport) and debugging multi-turn flows like elicitation now that there's no session to carry context for you. If you maintain or consume an MCP server, that's the fastest way to answer "is this the tool's data, or the model's retelling of it?" — which is exactly the question this whole incident hinged on.
 
 None of this is exotic. It's the same lesson software engineering already learned about humans transcribing spreadsheets by hand: for anything that has to be exactly right, verify programmatically — don't trust a confident read of a long list, human or otherwise.
 
@@ -131,10 +127,24 @@ The two records the agent mislabeled as 2026 are the 4th and 5th above — both 
 | **Result across calls 2 & 3** | Byte-for-byte identical (verified) — the tool was deterministic |
 | **Divergence point** | Roughly record 130 of 159 (~82% through the list) |
 
-> [!CAUTION]
-> The "long-context attention decay" and "anchoring on the current date" explanations are a diagnosis by symptom — inferred from comparing input and output — not a confirmed root cause from model internals. Treat them as the most parsimonious fit for the observed behavior, not a verified mechanism.
+> **Caution:** The "long-context attention decay" and "anchoring on the current date" explanations are a diagnosis by symptom — inferred from comparing input and output — not a confirmed root cause from model internals. Treat them as the most parsimonious fit for the observed behavior, not a verified mechanism.
 
 [Full details →](model-details.md)
+
+</details>
+
+<details>
+<summary><strong>Exhibit D — reproducing the bug live in Postman</strong></summary>
+
+![Postman's AI request builder reproducing the sparkles-mcp date-mangling bug, saved to a shared "Sparkles Experiments" collection](llm-mcp-mangling-example.png)
+
+This is the actual incident, reproduced inside Postman's AI request builder rather than described secondhand. A few things worth pointing out in the screenshot:
+
+- The request is saved as a named item ("Showing older entries claiming 2026") inside a shared team collection, not lost in a chat scrollback — anyone on the team can open it, not just whoever happened to be in the original conversation.
+- The right-hand panel shows the raw tool call (`Finished executing tool getSparkles`) alongside the model's prose answer, so the two can be compared directly instead of taking the summary on faith.
+- The model dropdown makes it trivial to rerun the exact same prompt against a different model (here, switching to Claude Sonnet 4.6) to see whether the mistake is model-specific or reproduces generally — turning a one-off "the agent got this wrong" into an actual, shareable test case.
+
+That's the practical version of "inspect the raw wire traffic, not the agent's retelling of it" from above: instead of a screenshot pasted into Slack, it's a versioned, rerunnable artifact your teammates can pull up themselves.
 
 </details>
 
