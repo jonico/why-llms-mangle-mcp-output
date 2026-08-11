@@ -2,7 +2,7 @@
 
 # MCP Response OK, Wrong Answer: How LLMs Mangle Perfectly Valid API Data
 
-*A field note on LLMs, MCP, and what happens when a tool call succeeds but the agent's read of it doesn't.*
+*Why LLMs sometimes mangle MCP output and how Postman can help*
 
 > **Note:** This post walks through a real (anonymized) incident, the mechanics behind it, and what actually fixes it. The full anonymized tool output, agent conversation, and model/environment details are linked at the bottom so you can check the claims yourself instead of taking them on faith — which is, not coincidentally, the whole point of the post.
 
