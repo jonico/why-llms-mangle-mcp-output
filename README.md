@@ -1,6 +1,6 @@
 ![MCP](https://img.shields.io/badge/protocol-MCP-6E56CF) ![Model](https://img.shields.io/badge/model-Claude%20Sonnet%205-CC785C) ![Status](https://img.shields.io/badge/status-field%20note-blue)
 
-# 200 OK, Wrong Answer: How LLMs Mangle Perfectly Valid API Data
+# MCP Response OK, Wrong Answer: How LLMs Mangle Perfectly Valid API Data
 
 *A field note on LLMs, MCP, and what happens when a tool call succeeds but the agent's read of it doesn't.*
 
@@ -28,6 +28,12 @@ The agent read the payload and returned a clean, confident list: eight entries, 
 Two of the eight entries were wrong — not wrong in content, wrong in *year*. The agent had labeled them 2026 when the raw payload said 2025. It only came to light because I happened to screenshot the raw tool output and compare it line by line against the agent's summary. Nothing about the agent's answer signaled uncertainty. It didn't hedge. It cited "raw" timestamps that it had silently altered.
 
 > **Warning:** When confronted, the agent's first explanation was also wrong: it claimed the tool must be non-deterministic, since a second call "returned different data." It hadn't — a third call proved the payload was byte-for-byte stable across requests. That was a second, independent fabrication, generated with just as much confidence as the first.
+
+Here's that exact exchange, unedited:
+
+![The original Claude conversation: asking for sparkles since May 1st, getting 8 back with two fabricated 2026 dates, then Claude's first (also wrong) explanation that the tool must be returning sample data](llm-mangle-wrong-claude.png)
+
+Notice the model's own annotation on item 8 — "this one is dated after today, likely a scheduling artifact in the data." It noticed the anomaly. It just concluded the *data* was broken rather than checking its own read of it.
 
 ## Why this happens
 
