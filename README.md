@@ -23,6 +23,10 @@ I asked an agent connected to an internal "sparkles" MCP tool — a Slack-based 
 
 The agent read the payload and returned a clean, confident list: eight entries, nicely formatted, each with a real-looking ISO timestamp. It looked exactly like what a "since May 1st" filter should produce.
 
+Here's what a sparkle actually looks like at the source, in Slack — a `/sparkle` shoutout, tallied by a bot, one record per mention:
+
+![A Slack /sparkle command giving a shoutout, with the Sparkles app replying with each mentioned user's updated total — including the count of 159 that the MCP tool payload in this incident was built from](sparkle-example.png)
+
 ## The catch
 
 Two of the eight entries were wrong — not wrong in content, wrong in *year*. The agent had labeled them 2026 when the raw payload said 2025. It only came to light because I happened to screenshot the raw tool output and compare it line by line against the agent's summary. Nothing about the agent's answer signaled uncertainty. It didn't hedge. It cited "raw" timestamps that it had silently altered.
