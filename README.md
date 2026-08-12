@@ -19,13 +19,15 @@ Model Context Protocol (MCP) made a specific promise: give an LLM agent a tool, 
 
 ## The request
 
-I asked an agent connected to an internal "sparkles" MCP tool — a Slack-based peer-recognition system, one record per shoutout — to list everything for a given user since May 1st. The tool returned a single JSON payload: 159 records, each with a `reason`, a `sparkle-date`, a `sparkle-giver`, and a `sparkle-user`, spanning about three years.
-
-The agent read the payload and returned a clean, confident list: eight entries, nicely formatted, each with a real-looking ISO timestamp. It looked exactly like what a "since May 1st" filter should produce.
+I asked an agent connected to an internal "sparkles" MCP tool — a Slack-based peer-recognition system, one record per shoutout — to list everything for a given user since May 1st.
 
 Here's what a sparkle actually looks like at the source, in Slack — a `/sparkle` shoutout, tallied by a bot, one record per mention:
 
 ![A Slack /sparkle command giving a shoutout, with the Sparkles app replying with each mentioned user's updated total — including the count of 159 that the MCP tool payload in this incident was built from](sparkle-example.png)
+
+The tool returned a single JSON payload: 159 records, each with a `reason`, a `sparkle-date`, a `sparkle-giver`, and a `sparkle-user`, spanning about three years.
+
+The agent read the payload and returned a clean, confident list: eight entries, nicely formatted, each with a real-looking ISO timestamp. It looked exactly like what a "since May 1st" filter should produce.
 
 ## The catch
 
