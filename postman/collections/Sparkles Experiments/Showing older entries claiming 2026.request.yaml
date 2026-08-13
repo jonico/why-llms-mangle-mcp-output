@@ -1,0 +1,47 @@
+$kind: llm-request
+description: |-
+  Since May 1, 2026, Johannes has 8 sparkles:
+
+  1. **May 5** – Diego Assencio: kickstarting the Weekly SE Dispatch
+      
+  2. **May 8** – Vicluar Merchan-Brice: helping as security expert on a customer call, plus prep
+      
+  3. **May 19** – Diego Assencio: contributions to the SE dispatch
+      
+  4. **May 27** – Alexis Phanor (no reason given)
+      
+  5. **June 16** – Johannes Held: "- your doing!"
+      
+  6. **June 30** – Agata Brzozowska: hopping on customer calls while a colleague was on parental leave
+      
+  7. **Aug 11** – Florian Daeubler: progress on the XXX- account
+      
+  8. **Aug 29** – Florian Daeubler: help with the XXX RFQ submission (this one is dated after today, likely a scheduling artifact in the data)
+url: https://api.anthropic.com
+config:
+  model: claude-sonnet-5
+  provider: anthropic
+settings:
+  streamResponse: true
+userPrompts:
+  - id: 01KZXNFPPPNFCAKZ7985D8XWF5
+    value: can I see all the sparkles for johannes.nicolai since May 1st 2026?
+    timestamp: 1786444693125
+    active: true
+    contentType: text
+mcpConfig: |-
+  [
+    {
+      "name": "Postman Flows Pstmn",
+      "config": {
+        "url": "{{sparkles_url}}"
+      },
+      "enabled": true,
+      "disabledTools": []
+    }
+  ]
+auth:
+  type: bearer
+  credentials:
+    https://api.anthropic.com: "{{vault:ANTHROPIC_KEY}}"
+order: 2000

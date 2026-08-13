@@ -1,0 +1,12 @@
+owner: "50602431"
+team: "2269376"
+lastUpdatedBy: "50602431"
+lastRevision: 1786629835000
+name: Sparkles Production (Postman Flows)
+color: 120
+values:
+  - key: sparkles_url
+    value: "{{vault:sparkles_mcp_url}}"
+    enabled: true
+createdAt: 2026-08-13T12:12:43.000Z
+updatedAt: 2026-08-13T14:03:55.000Z

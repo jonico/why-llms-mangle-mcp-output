@@ -1,0 +1,11 @@
+workspace:
+  id: a3d960d4-612d-4690-af8f-345d1a5fcf80
+cloudResources:
+  collections:
+    ../postman/collections/Sparkles Experiments: 6a7af920240accd57eae7871
+  environments:
+    ../postman/environments/Sparkles Production (Postman Flows).environment.yaml: 50602431-fd2c1c3c-a767-4e22-bf4b-adf2db1e8c76
+  documents:
+    ../postman/documents/WORKSPACE-README.md: db71b94f-2025-4fde-a61b-aa1b13aafecd
+  globals:
+    ../postman/globals/workspace.globals.yaml: 77039add-5c23-4f9a-85b4-0c891e26a0ba

@@ -1,0 +1,54 @@
+$kind: collection
+description: |-
+  This collection demonstrates Postman's MCP (Model Context Protocol) integration for querying sparkles data. Sparkles are recognition and appreciation tokens that team members give to each other in Slack to acknowledge contributions, help, and achievements.
+
+  The collection includes two complementary requests that showcase different approaches to accessing sparkles data:
+
+  1. **Sparkles MCP Call** - A direct MCP request that connects to the Postman Flows sparkles MCP server to retrieve all sparkles for user johannes.nicolai. This request returns comprehensive data including 159 total sparkles with detailed information about reasons, dates, and the people who gave them.
+
+  2. **Showing older entries claiming 2026** - An LLM-powered request using Claude Sonnet 5 via the Anthropic API that demonstrates AI-powered natural language querying. This request filters sparkles data using the prompt "can I see all the sparkles for johannes.nicolai since May 1st 2026?" and returns 8 filtered results, showcasing how AI can intelligently parse and filter structured data based on conversational queries.
+
+  ## Related Documentation
+
+  This collection is part of a field study documenting how LLMs can mangle perfectly valid MCP tool output. The following workspace documents provide comprehensive analysis and evidence:
+
+  ### 📄 [MCP Response OK, Wrong Answer - Main Article](https://github.com/jonico/why-llms-mangle-mcp-output/blob/main/README.md)
+  The primary blog post explaining why LLMs sometimes fabricate data when transcribing long, repetitive JSON payloads from MCP tools. Covers the mechanics of attention degradation, anchoring bias, and what actually fixes it. Includes real examples from this collection showing how Claude Sonnet 5 mislabeled 2025 dates as 2026 when filtering sparkles data.
+
+  **Key takeaways:**
+  - LLMs regenerate text token-by-token rather than copying, leading to transcription errors in long structured data
+  - Attention degrades over repetitive context (~150+ records), especially in the middle sections
+  - Anchoring on salient values (like "current year") can override literal source data
+  - The fix: push filtering into code (jq, grep, scripts) rather than asking models to eyeball and retype data
+  - Postman's MCP Inspector lets you compare raw tool output against agent summaries to catch these errors
+
+  ### 📄 [Anonymized Agent Conversation](https://github.com/jonico/why-llms-mangle-mcp-output/blob/main/anonymized-agent-conversation.md)
+  The complete, unfiltered conversation transcript showing the exact exchange where Claude Sonnet 5 fabricated 2026 dates from 2025 source data. Includes the agent's initial confident (but wrong) answer, its incorrect self-diagnosis claiming the tool was "non-deterministic," and the eventual correct explanation after being confronted with evidence.
+
+  **What you'll see:**
+  - The original user request: "Can I see all the sparkles for @user.a since May 1st?"
+  - The agent's response with 2 fabricated 2026 dates (items 7 & 8)
+  - The agent's first wrong explanation: "the tool may be returning sample/demo data"
+  - The correction after seeing raw tool output
+  - The agent's second wrong explanation: "the tool returned different data"
+  - The final accurate diagnosis after a third tool call proved the output was stable
+
+  ### 📄 [Model & Environment Details](https://github.com/jonico/why-llms-mangle-mcp-output/blob/main/model-details.md)
+  Technical specifications and reproducibility notes for the incident. Documents the exact model (Claude Sonnet 5), runtime environment (Claude Agent SDK with MCP servers), payload characteristics (159 records, ~15-20K tokens), and the point where transcription accuracy degraded (around record 130 of 159, ~82% through).
+
+  **Technical details:**
+  - Model: Claude Sonnet 5 (claude-sonnet-5)
+  - Runtime: Claude Agent SDK, agentic mode with file tools + sandboxed shell + MCP servers
+  - Tool: getSparkles MCP tool returning 159 JSON records
+  - Verified: Tool output was byte-for-byte identical across 3 sequential calls
+  - Divergence point: Roughly 82% through the 159-record list
+  - Note: Explanations are behavioral inferences from observed symptoms, not confirmed from model internals
+
+  ## How to Use This Collection
+
+  1. **Run the MCP request directly** to see the raw 159-record payload from the sparkles tool
+  2. **Run the LLM-powered request** to see how Claude filters and summarizes the same data
+  3. **Compare the outputs** - check if dates, counts, and details match between raw tool output and LLM summary
+  4. **Read the documentation** to understand why mismatches occur and how to prevent them in production
+
+  This collection serves as a reproducible test case for LLM transcription fidelity with long, structured MCP tool outputs.
