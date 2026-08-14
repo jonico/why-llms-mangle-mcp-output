@@ -79,6 +79,10 @@ Here's this exact incident, reproduced live in Postman's AI request builder rath
 
 The request is saved as a named item in a shared team collection, not lost in a chat scrollback — anyone on the team can open it, not just whoever happened to be in the original conversation. The right-hand panel shows the raw tool call (`Finished executing tool getSparkles`) alongside the model's prose answer, so the two can be compared directly instead of taking the summary on faith. And the model dropdown makes it trivial to rerun the exact same prompt against a different model (here, switching to Claude Sonnet 4.6) to check whether the mistake is model-specific or reproduces generally — turning a one-off "the agent got this wrong" into an actual, shareable test case instead of a screenshot pasted into Slack.
 
+It also turns into a real discussion instead of a solo debugging session. Comments live directly on the request and response, so a teammate can point at the exact two records in question and pull in whoever's needed — no separate Slack thread, no losing track of which response the conversation is actually about:
+
+![A comment thread directly on the Postman request: a teammate pointing at the two mismatched records in the raw MCP response, and Johannes tagging in a colleague to help explain the discrepancy](collaboration-on-collection-example.png)
+
 None of this is exotic. It's the same lesson software engineering already learned about humans transcribing spreadsheets by hand: for anything that has to be exactly right, verify programmatically — don't trust a confident read of a long list, human or otherwise.
 
 ## Receipts
